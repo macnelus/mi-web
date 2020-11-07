@@ -1,0 +1,19 @@
+{
+  "name": "mi-web",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:macnelus/mi-web.git",
+  "author": "Macnelus <macnelus@gmail.com>",
+  "license": "MIT",
+  "workspaces": [
+    "server",
+    "client"
+  ],
+  "private": true,
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  }
+}
