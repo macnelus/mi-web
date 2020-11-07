@@ -1,4 +1,19 @@
-h1 {
-  text-align: center;
-  color: #333;
+#bio {
+  display:flex;
+
+
+  .photo-bio {
+     border: 1px solid red;
+     height: 100vh;
+     width: 50%;
+     flex: 1;
+     background-color: greenyellow
+  }
+  .text-bio { 
+    border: 1px solid red;
+    height: 100vh;
+    width: 50%;
+    flex: 1;
+    background-color: orange;
+  }
 }

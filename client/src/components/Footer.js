@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () => {  
   return (
     <footer>
-      <p>Soy un footer</p>
+      <p>Diseñada por Mariano Cuesta &copy; 2020</p>
     </footer>
   );
 }
