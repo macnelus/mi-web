@@ -7,12 +7,13 @@ const Bio = () => {
   return (
     <>
       <Header />
-      <main>
-        <h1>Bio</h1>
+      <main id="bio">
+        <div className="photo-bio"></div>
+        <div className="text-bio"></div>
       </main>
       <Footer />
     </>
   );
-}
+};
 
 export default Bio;
