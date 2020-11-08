@@ -20,7 +20,6 @@ const Home = () => {
         <nav className="tags-menu">
           <Link to="#">photo</Link>
           <Link to="#">video</Link>
-          <Link to="#">digital marketing</Link>
           <Link to="#">web development</Link>
         </nav>
       </div>

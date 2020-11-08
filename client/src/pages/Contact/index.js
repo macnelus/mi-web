@@ -9,7 +9,7 @@ const Contact = () => {
       <Header />
       <main id="contact">
         
-        <form class="form-label form-js-label">
+    <form class="form-label form-js-label">
     <fieldset>
       <input id="userName" name="userName" type="text" autocomplete="off" required />
       <label for="userName">User Name</label>
@@ -20,16 +20,13 @@ const Contact = () => {
     </fieldset>
     <fieldset>
       <textarea id="message" name="message" type="textarea" autocomplete="off" />
-      <label for="description">Description (not required)</label>
+      <label for="box">Message</label>
     </fieldset>
   </form>
-
-
-        
-        <div className="map">
-          <h1>Contact</h1>
-          <p>social media</p>
-        </div>
+<div>
+          <a href="#" className="btn">Send</a>
+          
+</div>        
       </main>
 
       <Footer />
