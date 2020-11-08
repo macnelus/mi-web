@@ -1,16 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 #contact {
   display:flex;
-
+  
 
   .form {
-     border: 1px solid red;
-     height: 100vh;
-     width: 50%;
-     flex: 1;
-     background-color: greenyellow
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-content: initial;
+  width:50%;
+  background-image: url(../img/contact-background-images-9.jpg);
+  background-position: left center;
+  font-family: 'Poppins', sans-serif;
+  color:#333;
   }
+
+    .form-control {
+    margin:.5rem;
+    justify-content: left;
+    padding-left:3rem;
+    color:#555;
+    }
+  
+    input, textarea{
+      margin:1rem;
+      border-top:0;
+      border-left:0;
+      border-right:0;
+      border-color:#999;
+      background-color: transparent;
+    }     
+  
+      .box{
+        
+        }
+
+      .btn {
+        background: linear-gradient(#444, #222);
+        margin-top: 3rem;
+        padding:.7rem 2rem .7rem 2rem;
+        color:whitesmoke;
+        border-radius: 10px;
+        justify-content: right;
+        
+      }
+
   .map { 
-    border: 1px solid red;
+    padding: 5rem 0 0 5rem;
     height: 100vh;
     width: 50%;
     flex: 1;
