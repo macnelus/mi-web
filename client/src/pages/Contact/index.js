@@ -3,29 +3,27 @@ import React from 'react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 
-
 const Contact = () => {
   return (
     <>
       <Header />
       <main id="contact">
-        <form className="form">
-          <div className="form-control">
-            <label>Name</label>
-            <input id="name" type="text" />
-          </div>
-          <div className="form-control">
-            <label>email</label>
-            <input id="email" type="email" />
-          </div>
-          <div>
-            <label className="box">Message</label>
-            <textarea className="box" id="message" type="textarea" />
-          </div>
+        
+        <form class="form-label form-js-label">
+    <fieldset>
+      <input id="userName" name="userName" type="text" autocomplete="off" required />
+      <label for="userName">User Name</label>
+    </fieldset>
+    <fieldset>
+      <input id="userEmail" name="userEmail" type="email" autocomplete="off" required />
+      <label for="userEmail">Email Address</label>
+    </fieldset>
+    <fieldset>
+      <textarea id="message" name="message" type="textarea" autocomplete="off" />
+      <label for="description">Description (not required)</label>
+    </fieldset>
+  </form>
 
-          <div className="btn">Send</div>
-          
-        </form>
 
         
         <div className="map">
