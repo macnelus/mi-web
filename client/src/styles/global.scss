@@ -6,3 +6,10 @@
     color: #212121;
     background-position: left center;
   }
+
+  a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
