@@ -1,5 +1,4 @@
 import logger from '../lib/logger.js';
-import { request } from 'express';
 
 const httpLoggerMiddleWare = async (request, response, next) => {
   const { method, url, hostname, body } = request;

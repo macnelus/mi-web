@@ -6,4 +6,4 @@ healthRouter.get('/health', (request, response) => {
   return response.send('ok');
 });
 
-export default express();
+export default healthRouter;
