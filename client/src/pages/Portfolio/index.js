@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
@@ -9,7 +10,8 @@ const Portfolio = () => {
     <>
       <Header />
       <main>
-        <h1>Portfolio</h1>
+        <Link to="./photo">Bio</Link>
+        <Link to="./video">Video</Link>
       </main>
       <Footer />
     </>
