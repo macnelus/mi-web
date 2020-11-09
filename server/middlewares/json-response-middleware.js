@@ -1,6 +1,6 @@
 const jsonResponse = (request, response, next) => {
-  response.setHandler('Content-type', 'application/json');
+  response.setHeader('Content-type', 'application/json');
   next();
 };
 
-export default jsonResponse; 
+export default jsonResponse;  
