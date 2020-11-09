@@ -1,5 +1,6 @@
-"lerna": "3.22.1", // Coloca la version de lerna instalada
+{
   "npmClient": "yarn",
   "packages": ["server", "client"], // Coloco los paquetes internos
   "useWorkspaces": true,
   "version": "1.0.0"
+}

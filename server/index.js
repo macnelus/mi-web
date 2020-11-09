@@ -1,24 +1,28 @@
-import express from 'express';
+import express from 'express'; // importamos express
+import dotenv from 'dotenv'; // variables de desarrollo
+import logger from './lib/logger.js';
 import bodyParser from 'body-parser';
+import cors from 'cors';
 
-// middlewares import
-import jsonResponseMiddleware from './middleware/json-response-middleware.js';
-import loggerMiddleware from './middleware/http-logger-middleware.js';
+dotenv.config();
 
-// Router import
-import forecastRouter from './routes/forecast.js';
+//middlewares
+import loggerMiddleware from './middlewares/logger-middleware.js';
+import jsonResponse from './middlewares/json-response-middleware.js';
 
-const PORT = 5000;
+//routers
+import healthRouter from './routes/health.js';
 
 const server = express();
 
-// JSON body parser
-server.use(bodyParser.json());
-server.use(jsonResponseMiddleware);
-// Logger
+const PORT = process.env.PORT || 3000;
+
 server.use(loggerMiddleware);
+server.use(jsonResponse);
+server.use(bodyParser.json());
+server.use(cors());
 
-// Routes
-server.use(forecastRouter);
+//routes
+server.use(healthRouter);
 
-server.listen(PORT, () => console.log(`Server running on port 📡 ${PORT}`));
+server.listen(PORT, () => logger.info(`Server starting on port ${PORT} 🚀 📡`)); //comprobamos que el server está corriendo.

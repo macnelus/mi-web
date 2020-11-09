@@ -3,7 +3,7 @@ import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 
 
-const YOUTUBE_PLAYLIST_ITEMS_API = 'https://www.googleapis.com/youtube/v3/playlistItems';
+const YOUTUBE_PLAYLIST_ITEMS_API = 'https://www.googleapis.com/youtube/v3/channels';
 export async function getServerSideProps() {
   const res = await fetch(`${YOUTUBE_ITEMS_API}?part=snippet&maxResults=50&channelid=UC-jqp9Jz_9tiGiVVtSiPkmw&key=${process.env.YOUTUBE_API_KEY}`)
   const data = await res.json();

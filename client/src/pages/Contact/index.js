@@ -68,7 +68,7 @@ const Contact = () => {
             </a>
           </div>
           <div className="sm-4">
-            <a href="http://www.telegram.com/@macnelus">
+            <a href="http://www.t.me/macnelus">
               <img src={Telegram} width="10%" height="100" />
               <span>Telegram</span>
             </a>

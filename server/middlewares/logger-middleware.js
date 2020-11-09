@@ -1,11 +1,16 @@
 import logger from '../lib/logger.js';
+import { request } from 'express';
 
-const httpLoggerMiddleware = async (request, response, next) => {
+const httpLoggerMiddleWare = async (request, response, next) => {
   const { method, url, hostname, body } = request;
   const { statusCode, statusMessage } = response;
-  logger.info({ request: { method, url, hostname, body } });
+
+  logger.info({
+    request: { method, url, hostname, body },
+  });
   logger.info({ response: { url, statusCode, statusMessage } });
+
   next();
 };
 
-export default httpLoggerMiddleware;
+export default httpLoggerMiddleWare;
