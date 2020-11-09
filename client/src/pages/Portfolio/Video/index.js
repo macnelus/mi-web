@@ -5,7 +5,7 @@ import Footer from '../../components/Footer';
 
 const YOUTUBE_PLAYLIST_ITEMS_API = 'https://www.googleapis.com/youtube/v3/playlistItems';
 export async function getServerSideProps() {
-  const res = await fetch(`${YOUTUBE_PLAYLIST_ITEMS_API}?part=snippet&maxResults=50&playlistId=PL7X7H8HG1RcR7Wy29qXp6XX89dLXMLTyw&key=${process.env.YOUTUBE_API_KEY}`)
+  const res = await fetch(`${YOUTUBE_ITEMS_API}?part=snippet&maxResults=50&channelid=UC-jqp9Jz_9tiGiVVtSiPkmw&key=${process.env.YOUTUBE_API_KEY}`)
   const data = await res.json();
   return {
     props: {
@@ -40,7 +40,6 @@ export default function Home({ data }) {
             )
           })}
         </ul>
-        <Footer/>
+        <Footer />
       </main>
-
-
+    </div>
