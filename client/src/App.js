@@ -6,6 +6,7 @@ import Bio from './pages/Bio';
 import Portfolio from './pages/Portfolio';
 import Blog from './pages/Blog';
 import Contact from './pages/Contact';
+import Video from 'pages/Portfolio/Video'
 
 function App() {
   return (
