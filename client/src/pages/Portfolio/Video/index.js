@@ -1,40 +1,39 @@
 import React from 'react';
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
+import Header from '../../../components/Header';
+import Footer from '../../../components/Footer';
 
 
-const YOUTUBE_PLAYLIST_ITEMS_API = 'https://www.googleapis.com/youtube/v3/channels';
-export async function getServerSideProps() {
+const YOUTUBE_ITEMS_API = 'https://www.googleapis.com/youtube/v3/channels';
+
+const getYoutubeApi = async () => {
   const res = await fetch(`${YOUTUBE_ITEMS_API}?part=snippet&maxResults=50&channelid=UC-jqp9Jz_9tiGiVVtSiPkmw&key=${process.env.YOUTUBE_API_KEY}`)
-  const data = await res.json();
-  return {
-    props: {
-      data
-    }
-  }
+  
+  return res.json();
 }
 
-export default function Home({ data }) {
+export default async function Video() {
+  const data = await getYoutubeApi();
+  console.log(data);
   return (
-    <div className={styles.container}>
+    <div className="">
       <Header />
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
+      <main className="">
+        <h1 className="">
           NoSoyUnPDF
         </h1>
 
-        <ul className={styles.grid}>
+        <ul className="">
           {data.items.map(({ id, snippet = {} }) => {
             const { title, thumbnails = {}, resourceId = {} } = snippet;
             const { medium } = thumbnails;
             return (
-              <li key={id} className={styles.card}>
+              <li key={id} className="">
                 <a href={`https://www.youtube.com/watch?v=${resourceId.videoId}`}>
                   <p>
                     <img width={medium.width} height={medium.height} src={medium.url} alt="" />
                   </p>
-                  <h3>{ title }</h3>
+                  <h3>{title}</h3>
                 </a>
               </li>
             )
@@ -43,3 +42,7 @@ export default function Home({ data }) {
         <Footer />
       </main>
     </div>
+  );
+}
+
+    
