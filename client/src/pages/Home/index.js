@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <main id="home">
       <div className="left-image">
-        <img alt="Landscape photo" /> 
+        <img alt="" /> 
       </div>
       <div className="home">
         <div className="principal">
@@ -18,14 +18,13 @@ const Home = () => {
           </nav>
         </div>
         <nav className="tags-menu">
+          <Link to="#">photo</Link>
           <Link to="#">video</Link>
-          <Link to="#">social media</Link>
-          <Link to="#">web</Link>
-          <Link to="/contact">programming</Link>
+          <Link to="#">web development</Link>
         </nav>
       </div>
       <div className="right-image">
-        <img alt="Landscape photo" />
+        <img alt="" />
       </div>
     </main>
   );

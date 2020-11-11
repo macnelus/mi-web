@@ -1,0 +1,15 @@
+  body {
+    font: 16px/1 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 200;
+    background: url(../img/contact-background-images-9.jpg) 50% 50%;
+    background-size: cover;
+    color: #212121;
+    background-position: left center;
+  }
+
+  a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
