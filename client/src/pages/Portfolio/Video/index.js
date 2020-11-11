@@ -1,48 +1,32 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Header from '../../../components/Header';
 import Footer from '../../../components/Footer';
+import { getYoutubeApi } from '../../../lib/api.js';
 
+const Video = () => {
+  const [youtubeData, setYouTubeData] = useState([]);
 
-const YOUTUBE_ITEMS_API = 'https://www.googleapis.com/youtube/v3/channels';
+  const fetchYouTubeData = async () => {
+    const data = await getYoutubeApi();
+    setYouTubeData(data);
+  };
 
-const getYoutubeApi = async () => {
-  const res = await fetch(`${YOUTUBE_ITEMS_API}?part=snippet&maxResults=50&channelid=UC-jqp9Jz_9tiGiVVtSiPkmw&key=${process.env.YOUTUBE_API_KEY}`)
-  
-  return res.json();
-}
+  useEffect(() => {
+    fetchYouTubeData();
+  }, [youtubeData]);
 
-export default async function Video() {
-  const data = await getYoutubeApi();
-  console.log(data);
   return (
     <div className="">
       <Header />
 
       <main className="">
-        <h1 className="">
-          NoSoyUnPDF
-        </h1>
+        <h1 className="">NoSoyUnPDF</h1>
 
-        <ul className="">
-          {data.items.map(({ id, snippet = {} }) => {
-            const { title, thumbnails = {}, resourceId = {} } = snippet;
-            const { medium } = thumbnails;
-            return (
-              <li key={id} className="">
-                <a href={`https://www.youtube.com/watch?v=${resourceId.videoId}`}>
-                  <p>
-                    <img width={medium.width} height={medium.height} src={medium.url} alt="" />
-                  </p>
-                  <h3>{title}</h3>
-                </a>
-              </li>
-            )
-          })}
-        </ul>
+        <ul className=""></ul>
         <Footer />
       </main>
     </div>
   );
-}
+};
 
-    
+export default Video;
