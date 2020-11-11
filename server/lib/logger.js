@@ -1,5 +1,3 @@
-// Copy/pasta from winston docs
-
 import winston from 'winston';
 const { createLogger, format, transports } = winston;
 const { combine, timestamp, prettyPrint, json } = format;
@@ -10,4 +8,4 @@ const logger = createLogger({
   exitOnError: false,
 });
 
-export default logger;
+export default logger; 
