@@ -1,7 +1,9 @@
-// import { gapi } from '../App.js';
-// const { REACT_APP_YOUTUBE_API_KEY } = process.env;
-// const YOUTUBE_ITEMS_API = 'https://www.googleapis.com/youtube/v3/channels';
-
 export const getYoutubeApi = async () => {
-  console.log('gapi', window.gapi);
+  const response = await window.gapi.client.request(
+    'https://www.googleapis.com/youtube/v3/channels?part=snippet%2Cstatistics&id=UC-jqp9Jz_9tiGiVVtSiPkmw',
+  );
+
+  const data = JSON.parse(response.body);
+  console.log({ data });
+  return data;
 };

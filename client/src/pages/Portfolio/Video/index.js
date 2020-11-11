@@ -13,7 +13,7 @@ const Video = () => {
 
   useEffect(() => {
     fetchYouTubeData();
-  }, [youtubeData]);
+  }, []);
 
   return (
     <div className="">
@@ -21,6 +21,8 @@ const Video = () => {
 
       <main className="">
         <h1 className="">NoSoyUnPDF</h1>
+
+        {/* TODO:  Render data */}
 
         <ul className=""></ul>
         <Footer />
