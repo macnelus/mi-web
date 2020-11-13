@@ -9,6 +9,7 @@ const Video = () => {
 
   const fetchYouTubeData = async () => {
     const data = await getYoutubeApi();
+
     setYouTubeData(data);
   };
 
@@ -24,11 +25,10 @@ const Video = () => {
         <h1 className="">NoSoyUnPDF</h1>
 
         <section>
-          {youtubeData.map((video) => (
-            <YouTubeItem key={video.videoId} video={video} />
+          {youtubeData.map((video, i) => (
+            <YouTubeItem key={i} video={video} />
           ))}
         </section>
-
         <ul className=""></ul>
         <Footer />
       </main>
