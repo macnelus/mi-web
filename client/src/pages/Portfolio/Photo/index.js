@@ -5,18 +5,35 @@ import Footer from '../../components/Footer';
 
 const Photo = () => {
 
+  const [flickrData, setFlickrData] = useState([]);
+
+  const fetchFlickrData = async () => {
+    const data = await getYoutubeApi();
+
+    setFlickrData(data);
+  };
+
+  useEffect(() => {
+    fetchFlickrData();
+  }, []);
+
   return (
-    <>
+    <div className="">
       <Header />
-      <main id="photo">
-<h1>PHOTO</h1>
+
+      <main className="">
+        <h2 className="">Photo Gallery</h2>
+
+        <section>
+          {flickrData.map((video, i) => (
+            <flickrItem key={i} video={video} />
+          ))}
+        </section>
+        <ul className=""></ul>
+        <Footer />
       </main>
-      <Footer />
-    </>
+    </div>
   );
 };
 
 export default Photo;
-
-
-
