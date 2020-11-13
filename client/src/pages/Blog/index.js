@@ -1,18 +1,20 @@
 import React from 'react';
 
-import Header from '../../components/Header';
+import Header from '../../components/Header.js';
 import Footer from '../../components/Footer';
 
 const Blog = () => {
+
   return (
-    <>
-      <Header />
-      <main>
-        <h1>Blog</h1>
-      </main>
+   <>
+    <Header />
+    
+    <h3>blog</h3>
+  
       <Footer />
-    </>      
-  );
-}
+  </>
+  )
+
+};
 
 export default Blog;

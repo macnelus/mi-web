@@ -13,6 +13,7 @@ const Contact = () => {
       <Header />
       <main id="contact">
         <form class="form-label form-js-label">
+          <h1>Contact me!</h1>
           <fieldset>
             <input
               id="userName"
@@ -43,31 +44,31 @@ const Contact = () => {
             <label for="box">Message</label>
           </fieldset>
           <fieldset>
-            <a href="#" className="btn send">
+            <a href="#" className="btn" id="send">
               Send
             </a>
           </fieldset>
         </form>
         <div>
-          <div className="sm-1">
+          <div>
             <a href="http://www.facebook.com/marianocuestafoto">
               <img src={Facebook} width="10%" height="100" />
               <span>Facebook</span>
             </a>
           </div>
-          <div className="sm-2">
+          <div>
             <a href="http://www.twitter.com/macnelus">
               <img src={Twitter} width="10%" height="100" />
               <span>Twitter</span>
             </a>
           </div>
-          <div className="sm-3">
+          <div>
             <a href="http://www.instagram.com/marianocuestafoto">
               <img src={Instagram} width="10%" height="100" />
               <span>Instagram</span>
             </a>
           </div>
-          <div className="sm-4">
+          <div>
             <a href="http://www.t.me/macnelus">
               <img src={Telegram} width="10%" height="100" />
               <span>Telegram</span>

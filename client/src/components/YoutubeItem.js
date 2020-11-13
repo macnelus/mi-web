@@ -3,14 +3,14 @@ import React from 'react';
 const YouTubeItem = ({ video }) => {
   const { videoId, title, description } = video;
   return (
-    <article key={videoId}>
+    <article>
       <iframe
         width="560"
         height="315"
         src={`https://www.youtube-nocookie.com/embed/${videoId}`}
-        frameBorder="0"
+        frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen
+        allowfullscreen
       ></iframe>
 
       <h2>{title}</h2>

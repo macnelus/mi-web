@@ -19,7 +19,7 @@ const Home = () => {
         </div>
         <nav className="tags-menu">
           <Link to="#">photo</Link>
-          <Link to="/porfolio/video">video</Link>
+          <Link to="/video">video</Link>
           <Link to="#">web development</Link>
         </nav>
       </div>
