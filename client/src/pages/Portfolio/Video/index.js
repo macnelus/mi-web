@@ -18,21 +18,18 @@ const Video = () => {
   }, []);
 
   return (
-    <div className="">
+    <>
       <Header />
-
-      <main className="">
-        <h1 className="">NoSoyUnPDF</h1>
-
-        <section>
+      <main id="video">
+        <h2 className="video-title">Videos</h2>
+        <section className="container">
           {youtubeData.map((video, i) => (
             <YouTubeItem key={i} video={video} />
           ))}
         </section>
-        <ul className=""></ul>
-        <Footer />
       </main>
-    </div>
+      <Footer />
+    </>
   );
 };
 

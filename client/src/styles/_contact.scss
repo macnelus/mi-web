@@ -12,6 +12,7 @@
     color:#333;
     font-size: 2rem;
     text-decoration: none;
+    transition: all 0.2s ease-in-out;
     &:hover {
           text-shadow: 0 0 1rem;
   }
@@ -102,6 +103,7 @@
       #send {
           font-size: 1.2rem;
           justify-content: center;
+          transition: all 0.2s ease-in-out;
         }
       
       .btn {

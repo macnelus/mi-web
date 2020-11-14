@@ -24,12 +24,14 @@
 
     h1 {
     font-family: 'Rock Salt', cursive;
+    color: #333;
     padding-bottom: 2rem;
     margin-left: 43%;
     position: relative;
     top:0%;
     transform: rotate(335deg);
     font-size: 3.8rem;
+    text-shadow: 0 0 .2rem #000;
 
   }
     margin-right:5rem;
@@ -39,11 +41,10 @@
     flex: 1;
   }
     .text-bio {
-    max-width: 40%;
-    margin-left:5%;
+    max-width: 30%;
+    margin-left:2%;
     line-height: 1.5;
     position: relative;
-    top:10%;
-
+    top:6%;
     }
 }
