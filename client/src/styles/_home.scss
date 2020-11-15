@@ -41,25 +41,8 @@
 
           &:hover {
             text-shadow: 0 0 2px #222;
+
           }
-        }
-      }
-    }
-
-    .tags-menu {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 3rem;
-
-      a {
-        text-decoration: none;
-        color: rgb(20, 20, 20);
-        font-size: 1.3rem;
-        padding-right: 1rem;
-        transition: all 0.3s;
-
-        &:hover {
-          text-shadow: 0 0 2px #222;
         }
       }
     }
