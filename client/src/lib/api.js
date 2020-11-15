@@ -1,10 +1,11 @@
 import Flickr from 'flickr-sdk';
 
 const { REACT_APP_FLICKR_API_KEY } = process.env;
+const { REACT_APP_YOUTUBE_API_KEY } = process.env;
 
 export const getYoutubeApi = async () => {
   const response = await window.gapi.client.request(
-    'https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UC-jqp9Jz_9tiGiVVtSiPkmw&order=date&type=video&videoSyndicated=true&key=___',
+    `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UC-jqp9Jz_9tiGiVVtSiPkmw&order=date&type=video&videoSyndicated=true&key=${REACT_APP_YOUTUBE_API_KEY}`
   );
   const { items } = JSON.parse(response.body);
   const youtubedata = items.map((video) => {
