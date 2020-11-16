@@ -17,11 +17,6 @@ const Home = () => {
             <Link to="/contact">Contacto</Link>
           </nav>
         </div>
-        <nav className="tags-menu">
-          <Link to="#">photo</Link>
-          <Link to="/video">video</Link>
-          <Link to="#">web development</Link>
-        </nav>
       </div>
       <div className="right-image">
         <img alt="" />

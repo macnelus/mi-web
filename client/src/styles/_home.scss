@@ -18,6 +18,7 @@
     .principal {
       display: flex;
       flex: 1;
+      height: 15rem;
 
       .home-titulo {
         color: rgb(20, 20, 20);
@@ -34,30 +35,14 @@
           display: block;
           color: rgb(20, 20, 20);
           padding: 1rem;
-          font-size: 2rem;
+          padding-top: 1.5rem;
+          font-size: 1.5rem;
           transition: all 0.3s;
 
           &:hover {
             text-shadow: 0 0 2px #222;
+
           }
-        }
-      }
-    }
-
-    .tags-menu {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 6rem;
-
-      a {
-        text-decoration: none;
-        color: rgb(20, 20, 20);
-        font-size: 1.7rem;
-        padding-right: 1rem;
-        transition: all 0.3s;
-
-        &:hover {
-          text-shadow: 0 0 2px #222;
         }
       }
     }

@@ -7,6 +7,8 @@ import Portfolio from './pages/Portfolio';
 import Blog from './pages/Blog';
 import Contact from './pages/Contact';
 import Video from './pages/Portfolio/Video';
+import Photo from './pages/Portfolio/Photo';
+import WebDeveloper from './pages/Portfolio/Webdeveloper';
 
 const { REACT_APP_YOUTUBE_API_KEY } = process.env;
 
@@ -43,6 +45,8 @@ function App() {
           <Route path="/blog" component={Blog} />
           <Route path="/portfolio" component={Portfolio} />
           <Route path="/video" component={Video} />
+          <Route path="/photo" component={Photo} />
+          <Route path="/webdeveloper" component={WebDeveloper} />
           <Route path="/contact" component={Contact} />
         </Switch>
       </BrowserRouter>
