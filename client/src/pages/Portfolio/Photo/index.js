@@ -19,20 +19,18 @@ const Photo = () => {
   }, []);
 
   return (
-    <div className="">
+    <>
       <Header />
-
-      <main className="">
-        <h2 className="">Photos</h2>
-
-        <section>
-          {flickrData.map((source, i) => (
-            <FlickrItem key={i} source={source} />
-          ))}
-        </section>
-        <Footer />
-      </main>
-    </div>
+        <main id="photo">
+          <h2 className="photo-title">Photos</h2>
+          <section className="container">
+            {flickrData.map((source, i) => (
+              <FlickrItem key={i} source={source} />
+            ))}
+          </section>
+        </main>
+      <Footer />
+    </>
   );
 };
 

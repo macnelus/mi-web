@@ -13,23 +13,28 @@ const Bio = () => {
           <img src={yo} alt="Autorretrato" />
         </div>
         <div className="title-bio">
-          <h1>Bio</h1>
-            <p className="text-bio">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel
-              dictum libero. Cras maximus elementum ullamcorper. Ut euismod, ipsum
-              et sollicitudin viverra, ex justo rhoncus ante, vel volutpat elit
-              velit vitae nisi. Ut aliquam eros leo, in auctor mauris laoreet id.
-              Morbi laoreet metus quis auctor sagittis. Maecenas nec varius justo.
-              In eget nulla justo. Sed molestie porttitor tristique. Duis
-              tincidunt, sem at faucibus bibendum, lacus orci efficitur orci, vel
-              aliquet diam lectus a mi. Curabitur rhoncus at sapien ut luctus.
-              Pellentesque mollis nisl quis ligula lacinia, vitae lobortis neque
-              fermentum. Vivamus at egestas ipsum. Sed vehicula dui nec nulla
-              aliquam, in blandit dolor placerat. Nulla et varius urna. Nam eu
-              pretium erat. Vestibulum fermentum ligula ex, at hendrerit tortor
-              feugiat quis. Phasellus magna mauris, posuere et neque accumsan,
-              vehicula sagittis magna. 
-            </p>
+          <h2>Bio</h2>
+          <p className="text-bio">
+            Aparecí por este mundo a finales del siglo pasado con una puesta en
+            escena bastante mejorable en todo caso. Hijo mayor de mis padres,
+            siempre se me dio bien ser la oveja negra de la familia. Por eso me
+            dediqué al mundo de la creatividad.
+            <br />
+            <br />
+            Empecé por pintar con tinta china una de las paredes de mi cuarto, y
+            luego vinieron la cámara de fotos, la edición de video y el diseño.
+            Siempre se me dió bien aprender pero mal estudiar así que investigué
+            y así llegué a trabajar para clientes como Karl Lagerfeld, Fundación
+            Telefónica, Quum Comunicación y últimamente Intiva Desarrollo
+            Directivo.
+            <br />
+            <br />
+            Me gradué en Comunicación Audiovisual en la Universidad de Sevilla,
+            y me formé en varios campos multidisciplinares, entre ellos el
+            Marketing Digital, donde hice un máster en la misma universidad.
+            <br />
+            <br />
+          </p>
         </div>
       </main>
       <Footer />

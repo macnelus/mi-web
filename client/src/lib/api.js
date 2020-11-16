@@ -32,7 +32,7 @@ const getPhotoData = async ({ photoId }) => {
     },
   } = response;
 
-  const { source } = size.find((item) => item.label === 'Medium 800');
+  const { source } = size.find((item) => item.label === 'Small 320');
   return source;
 };
 
@@ -43,7 +43,6 @@ console.log(flickr);
     user_id: '91158208@N05',
   });
 
-  console.log({ response });
 
   const {
     body: {
