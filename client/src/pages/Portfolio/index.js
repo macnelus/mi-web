@@ -13,7 +13,7 @@ const Portfolio = () => {
   return (
     <>
       <Header />
-      <h2 className>Portfolio</h2>
+      <h2 className ="title-porfolio">Portfolio</h2>
       <main id="menu-portfolio">
         <div className="card-grid">
           <Link className="card" to="/photo">

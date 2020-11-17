@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Poppins:wght@200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
 
 #contact {
   display: flex;
@@ -10,7 +10,7 @@
     display: flex;
     align-items: center;
     color:#333;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-decoration: none;
     transition: all 0.2s ease-in-out;
     &:hover {
@@ -22,6 +22,13 @@
       margin-right: 1rem;
       padding-top: 1%;
       padding-bottom: 1%;
+      filter: grayscale(100%);
+
+      &:hover {
+          text-decoration: none;
+          text-shadow: 0 0 1rem;
+          filter: grayscale(0%);
+        }
     }
   
   form {
@@ -31,7 +38,7 @@
 
     h1{
     padding:0rem 20rem;
-    font-family: 'Fjalla One';
+    font-family: 'Poppins';
     }
     
     fieldset {

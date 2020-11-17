@@ -4,7 +4,7 @@ const FlickrItem = ({ source }) => {
 
   return (
 
-    <figure>
+    <figure className="photo-card">
       <img src={source} alt="Gallery" />
     </figure>
 
