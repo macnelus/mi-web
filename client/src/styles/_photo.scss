@@ -10,13 +10,16 @@
 
   .container {
     display: grid;
-    grid-template-columns: repeat(8, 4fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 2.4rem;
+    margin-left:30%;
+    margin-right:30%;
 
   
   .photo-card { 
     background-color: #eee;
     padding: 1rem;
+    padding-right: 0;
     border-radius: 16px;
     box-shadow: 0 0 12px #555;
     transition: all .2s;

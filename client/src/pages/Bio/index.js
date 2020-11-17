@@ -30,7 +30,7 @@ const Bio = () => {
             <br />
             <br />
             Me gradué en Comunicación Audiovisual en la Universidad de Sevilla,
-            y me formé en varios campos multidisciplinares, entre ellos el
+            y me formé en varios campos de manera transdisciplinar, entre ellos el
             Marketing Digital, donde hice un máster en la misma universidad.
             <br />
             <br />
