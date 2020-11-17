@@ -10,7 +10,7 @@ const Photo = () => {
 
   const fetchFlickrData = async () => {
     const data = await getFlickrData();
-    const curatedData = data.slice(0, 16);
+    const curatedData = data.slice(0, 12);
     setFlickrData(curatedData);
   };
 

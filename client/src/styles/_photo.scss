@@ -1,6 +1,6 @@
 #photo {
   padding: 4rem;
-  margin-top: 10%;
+  margin-top: 5%;
 
 .photo-title{
     position: absolute;
@@ -18,11 +18,13 @@
   
   .photo-card { 
     background-color: #eee;
-    padding: 1rem;
-    padding-right: 0;
+    padding: 2rem;
     border-radius: 16px;
     box-shadow: 0 0 12px #555;
     transition: all .2s;
+    display: flex;
+    padding-bottom: 5rem;
+    justify-content: center;
     
     &:hover {
       box-shadow: 0 0 4px #999 inset;

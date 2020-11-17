@@ -4,6 +4,7 @@ import { Switch, BrowserRouter, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Bio from './pages/Bio';
 import Portfolio from './pages/Portfolio';
+import BlogPost from './pages/Blog/BlogPost';
 import Blog from './pages/Blog';
 import Contact from './pages/Contact';
 import Video from './pages/Portfolio/Video';
@@ -42,6 +43,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/bio" component={Bio} />
+          <Route path="/blog/:blogPost" component={BlogPost} />
           <Route path="/blog" component={Blog} />
           <Route path="/portfolio" component={Portfolio} />
           <Route path="/video" component={Video} />
