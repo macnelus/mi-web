@@ -6,7 +6,6 @@
   "author": "Macnelus <macnelus@gmail.com>",
   "license": "MIT",
   "workspaces": [
-    "server",
     "client"
   ],
   "private": true,
